@@ -1,0 +1,582 @@
+
+/**
+* @template:  Django
+
+TABLE OF CONTENTS
+
+	1 . Global
+		2 . Navbar
+		3 . Header
+		4 . Hero
+		5 . Portfolio
+		6 . Numbers
+		7 . Clients
+		8 . Contact
+		9 . Footer
+		10 . Demo-2
+		11 . Demo-3
+		
+*/
+
+@import "main.css";
+
+/* -------------------------------------------------------
+                     Global 
+-------------------------------------------------------- */
+
+body{
+	background-image: url(img\forest.jpg);
+	font-family: 'Raleway', sans-serif;
+	color: #111;
+	font-weight: 400;
+}
+
+.section-padding{
+	padding: 100px 0;
+}
+
+.tit{
+	margin-bottom: 100px;
+	display: inline-block;
+	font-size: 38px;
+	font-weight: 900;
+	text-transform: capitalize;
+}
+
+p{
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main{
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	margin-bottom: 247px;
+}
+
+input:focus,
+textarea:focus
+{
+	border-color: #555 !important;
+}
+
+/* -------------------------------------------------------
+                     Navbar 
+-------------------------------------------------------- */
+
+.navbar{
+	background: #000;
+	height: 60px;
+	line-height: 60px;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0;
+	text-transform: capitalize;
+	z-index: 99999;
+	display: none;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus
+{
+	font-size: 30px;
+	color: #fff;
+	padding-top: 20px;
+	font-family: 'Norican', cursive;
+}
+
+.navbar .navbar-nav>li>a{
+	margin: 0!important;
+	color: #eee!important;
+	padding: 0!important;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background: none;
+}
+
+.navbar .navbar-nav>li{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 20px 15px 0;
+	padding: 5 10px;
+	background: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.navbar .navbar-nav>li>a.active{
+	color: #fff;
+	background: none;
+}
+
+/* -------------------------------------------------------
+                    Header
+-------------------------------------------------------- */
+
+.header{
+	height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,.2);
+	background-image: url(../img/forest.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: overlay;
+	position: relative;
+	overflow: hidden;
+}
+
+.caption{
+	color: #fff;
+}
+
+.caption h1{
+	margin: 20px auto;
+	font-weight: 100;
+	font-size: 100px;
+	text-transform: uppercase;
+}
+
+.caption h3{
+	font-weight: 100;
+}
+
+.typed-cursor{
+    opacity: 1;
+    margin-left: 10px;
+    -webkit-animation: blink .5s infinite alternate;
+    -moz-animation: blink .5s infinite alternate;
+    animation: blink .5s infinite alternate;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+.button-scroll{
+	position: absolute;
+	bottom: 5vh;
+	left: calc(50% - 13px);
+	width: 26px;
+	height: 50px;
+	border-radius: 15px;
+	border:2px solid #fff;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.button-scroll span{
+	height: 10px;
+	width: 2px;
+	position: absolute;
+	left: calc(50% - 1px);
+	background: #fff;
+	-webkit-animation: scroll .5s infinite alternate;
+    -moz-animation: scroll .5s infinite alternate;
+    animation: scroll .5s infinite alternate;
+}
+
+@keyframes scroll{
+    0% { top: 50%; }
+    50% { top: 55%; }
+    100% { top: 60%; }
+}
+@-webkit-keyframes scroll{
+    0% { top: 50%; }
+    50% { top: 55%; }
+    100% { top: 60%; }
+}
+@-moz-keyframes scroll{
+    0% { top: 50%; }
+    50% { top: 55%; }
+    100% { top: 60%; }
+}
+
+/* -------------------------------------------------------
+                    Hero
+-------------------------------------------------------- */
+
+.hero .hero-item h5{
+	font-weight: 600;
+}
+
+.hero .hero-item p{
+	line-height: 2;
+}
+
+.hero .hero-img{
+	position: relative;
+}
+
+.hero button{
+	padding: 8px 25px;
+	border: none;
+	background: #222;
+	color: #eee;
+	transition: all .5s;
+}
+
+.hero button:hover{
+	background: #eee;
+	color: #222
+}
+
+.hero .services{
+	background: #f4f4f4;
+	margin: 100px auto;
+}
+
+.services .serv-row .serv-item{
+	padding: 20px 30px;
+	background: #fff;
+	box-shadow: 2px 5px 10px #eee;
+}
+
+.services .serv-row .serv-item span{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.services .serv-row .serv-item h6{
+	margin: 20px auto;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.hero .hero-progress{
+	padding: 0 20px;
+}
+
+.hero .hero-progress p{
+	font-size: 12px;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.hero .hero-progress .progress-main{
+	background: #eee;
+	width: 100%;
+	height: 4px;
+	margin: 0 auto 30px;
+}
+
+.hero-progress .progress-main .progress-bar{
+	background: #111;
+	height: 100%;
+	width: 0;
+	transition: all 2s;
+}
+
+/* -------------------------------------------------------
+                    Portfolio
+-------------------------------------------------------- */
+
+.portfolio{
+	overflow: hidden;
+	background: rgba(255,255,255,0.5);
+}
+
+.portfolio .filtering span{
+	padding: 0 25px 5px 20px;
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+}
+
+.portfolio .filtering .active:after{
+	width: 60%;
+}
+
+.portfolio .filtering span:after{
+	content: "";
+	background: #111;
+	position: absolute;
+	left: 18%;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	transition: all .5s;
+}
+
+.item-img {
+	padding: 15px;
+	position: relative;
+}
+
+.item-img-overlay{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	background: rgba(0,0,0,.6);
+	opacity: 0;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+.item-img-overlay .v,
+.item-img-overlay .x
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: none;
+}
+
+.item-img:hover .v:after,
+.item-img:hover .v:before
+{
+	left: 10%;
+	right: 10%;
+}
+
+.item-img:hover .x:after,
+.item-img:hover .x:before
+{
+	top: 10%;
+	bottom: 10%;
+}
+
+.item-img-overlay .v:after,
+.item-img-overlay .v:before
+{
+	content: '';
+	height: 1px;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	background: #eee;
+	transition: all .5s;
+}
+
+.item-img-overlay .v:after{
+	top: 10%;
+}
+
+.item-img-overlay .v:before{
+	bottom: 10%;
+}
+
+.item-img-overlay .x:after,
+.item-img-overlay .x:before
+{
+	content: '';
+	width: 1px;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	background: #eee;
+	transition: all .5s;
+}
+
+.item-img-overlay .x:after{
+	right: 10%;
+}
+
+.item-img-overlay .x:before{
+	left: 10%;
+}
+
+.item-img-overlay .overlay-info{
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #aaa;
+	transition: all .5s;
+}
+
+.item-img-overlay .v-middle a{
+	color: #eee;
+	font-size: 25px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+
+.item-img-overlay .v-middle h5{
+	color: #eee;
+	font-weight: 600;
+}
+
+.item-img:hover .item-img-overlay{
+	opacity: 1;
+}
+
+/* -------------------------------------------------------
+                    Numbers
+-------------------------------------------------------- */
+
+.numbers .numb-item span{
+	font-size: 40px;
+}
+
+.numbers .numb-item h3{
+	font-weight: 900;
+	margin: 20px auto;
+}
+
+.numbers .numb-item p{
+	color: #111;
+}
+
+/* -------------------------------------------------------
+                    Clients
+-------------------------------------------------------- */
+
+.clients{
+	background: #f4f4f4;
+}
+
+.clients .client-say{
+	padding: 50px;
+	background: #fff;
+	box-shadow: 2px 5px 10px #eee;
+}
+
+.client-say .client-item p{
+	font-size: 16px;
+	color: #444;
+	margin-bottom: 30px;
+}
+
+.client-say .client-item h6{
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+	width: 7px;
+	height: 7px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	background: #000;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span
+{
+	background: transparent;
+	transform: scale(1.2,1.2);
+}
+
+/* -------------------------------------------------------
+                    Contact
+-------------------------------------------------------- */
+.main-form{
+	font: black;
+}
+.contact .form{
+	overflow: hidden;
+}
+
+.contact .form input,
+.contact .form textarea
+{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background: #f7f7f7;
+	margin-bottom: 30px;
+}
+
+.contact .form textarea{
+	max-width: 100%;
+	max-height: 140px;
+	height: 140px;
+}
+
+.contact .form input.button{
+	background: #eee;
+	color: #111;
+	transition: all .5s;
+}
+
+.contact .form input.button:hover{
+	background-image: url(../img/forest.jpg);
+	color: #eee
+}
+
+/* -------------------------------------------------------
+                    Footer
+-------------------------------------------------------- */
+
+footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,255,255,0.5);
+	padding: 80px 0;
+	text-align: center;
+	z-index: 1;
+}
+
+footer .social-icon span{
+	color: black;
+	margin: 10px 2px 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+footer .social-icon span:hover{
+	color: #111;
+	background: #eee;
+}
+
+footer p{
+	color: #aaa;
+}
+
+/* -------------------------------------------------------
+                     Demo-2 
+-------------------------------------------------------- */
+
+#particles-js{
+	width: 100%;
+	height: 100%;
+}
+
+/* -------------------------------------------------------
+                     Demo-3 
+-------------------------------------------------------- */
+
+.demo-3{
+	position: relative;
+    height: 100vh;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center;
+}
+
+.demo-3-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+}
