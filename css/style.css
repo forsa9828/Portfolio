@@ -10,7 +10,7 @@ TABLE OF CONTENTS
 		4 . Hero
 		5 . Portfolio
 		6 . Numbers
-		7 . Clients
+	
 		8 . Contact
 		9 . Footer
 		10 . Demo-2
@@ -33,6 +33,8 @@ body{
 
 .section-padding{
 	padding: 100px 0;
+	background-image: url(../img/forest.jpg);
+	background: rgba(255,255,255,0.5);
 }
 
 .tit{
@@ -51,7 +53,7 @@ p{
 main{
 	position: relative;
 	z-index: 2;
-	background: #fff;
+	background-image: url(../img/forest.jpg);
 	margin-bottom: 247px;
 }
 
@@ -128,7 +130,7 @@ textarea:focus
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 	position: relative;
-	overflow: hidden;
+	/* overflow: ; */
 }
 
 .caption{
@@ -215,6 +217,7 @@ textarea:focus
 
 .hero .hero-item p{
 	line-height: 2;
+	color: black
 }
 
 .hero .hero-img{
@@ -313,7 +316,8 @@ textarea:focus
 
 .item-img {
 	padding: 15px;
-	position: relative;
+	position: absolute;
+	height: 100px;
 }
 
 .item-img-overlay{
@@ -421,6 +425,8 @@ textarea:focus
 	opacity: 1;
 }
 
+
+
 /* -------------------------------------------------------
                     Numbers
 -------------------------------------------------------- */
@@ -484,6 +490,8 @@ textarea:focus
 -------------------------------------------------------- */
 .main-form{
 	font: black;
+	padding: 50px;
+	
 }
 .contact .form{
 	overflow: hidden;
@@ -516,6 +524,36 @@ textarea:focus
 	color: #eee
 }
 
+.social-icon a{
+	position: relative;
+	color: black;
+	padding: 50px;
+	margin: 150px 2px 0;
+	width: 240px;
+	height: 240px;
+	line-height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.fa-linkedin {
+	font-size: 80px;
+	padding-right: 100px;
+	padding-left: 50px;
+}
+
+.fa-github {
+	font-size: 80px;
+	padding-right: 100px;
+}
+
+.fa-envelope {
+	font-size: 80px;
+	
+}
+
+
 /* -------------------------------------------------------
                     Footer
 -------------------------------------------------------- */
@@ -525,7 +563,7 @@ footer{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255,255,255,0.5);
+	background: rgba(61, 59, 59, 0.5);
 	padding: 80px 0;
 	text-align: center;
 	z-index: 1;

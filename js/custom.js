@@ -32,7 +32,7 @@ $(function (){
 
     // typejs
     $('.caption h4 span').typed({
-        strings: ["Creative Designer","Fornt End Developer","Photographic"],
+        strings: ["Full Stack Developer", "Front-End Development", "Designer"],
         loop: true,
         startDelay: 1000,
         backDelay: 2000
